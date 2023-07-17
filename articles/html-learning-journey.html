@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Some Cool Elements in HTML</title>
+    <link rel="favicon" href="" />
+    <style>
+      .div-span-example {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"> ~ </a>
+      <nav>
+        <ul>
+          <li><a href="../about-me.html">about me</a></li>
+          <li><a href="../projects.html">projects</a></li>
+          <li><a href="../thoughts.html">thoughts</a></li>
+          <li><a href="../contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>My <abbr>HTML</abbr> Learning Journey</h1>
+
+      <p>
+        <abbr>HTML</abbr> (Hyper Text Markup Language) is a
+        <strong>foundational</strong> component of web design. There are many
+        technologies that are used to build websites: React, jQuery, Angular,
+        Vue, etc. It may be tempting to learn these "hip" technologies first.
+        However, it is wise to learn HTML first to truly understand how websites
+        work. Furthermore, HTML is a powerful technology with many features. We
+        will explore some of the cool features that HTML offers in this article.
+      </p>
+      <aside>
+        <p>
+          In addition to HTML, CSS and JavaScript are also foundational
+          technologies of web design.
+        </p>
+      </aside>
+
+      <p>
+        To view the code for how these elements work, you can use your browser's
+        developer tools to inspect elements or view the page source.
+      </p>
+
+      <p>
+        The <code>&lt;picture&gt;</code> element can be used to load different
+        images depending on the context. For example, it can be used to load
+        different images based on the screen size or whether the browser
+        supports a given image file format.
+      </p>
+      <picture>
+        <source
+          srcset="../images/picture-demo-large.webp"
+          type="image/webp"
+          media="(min-width: 3000px)"
+        />
+        <source
+          srcset="../images/picture-demo-large.jpeg"
+          type="image/webp"
+          media="(min-width: 3000px)"
+        />
+        <img
+          src="../images/picture-demo-small.jpeg"
+          alt="A view of a city from the waterfront at night"
+        />
+      </picture>
+
+      <p>
+        The <code>&lt;em&gt;</code> element, used for emphasis, can be used to
+        change the meaning of a sentence. For example, "Really?" and
+        "<em>Really?</em>" can be interpreted to have different meanings.
+        Although it depends on the context, the normal "Really?" most likely
+        will be interpreted as a sincere question, while the emphasized
+        "Really?" may be interpreted as being sarcastic or greatly surprised.
+      </p>
+
+      <p>
+        The <code>&lt;b&gt;</code> element may look like it should be used to
+        bold text. However, doing so is not good practice. Bolding text should
+        be done through CSS. Rather, the <code>&lt;b&gt;</code> element should
+        be used to draw attention to the content without adding any semantic
+        importance to it. For example, MDN recommends using the
+        <code>&lt;b&gt;</code> element to highlight things like keywords in a
+        summary. For instance, <b>CSS</b> is used for styling purposes.
+      </p>
+
+      <p>
+        The <code>&lt;i&gt;</code> element may look like it should be used to
+        italize text. However, as we saw with the
+        <code>&lt;b&gt;</code> element, we cannot fall into this trap. Rather,
+        <code>&lt;i&gt;</code> should be used for "represents a range of text
+        that is set off from the normal text for some reason, such as idiomatic
+        text, technical terms, taxonomical designations, among others." For
+        instance, we are <i>Homo sapiens</i>.
+      </p>
+
+      <p>
+        The <code>&lt;br&gt;</code> element creates a line-break. This is useful
+        when writing poems or addresses. For example, here's a made-up poem:
+      </p>
+      <div>
+        You looked me in the eye. <br />
+        Goodbyes as usual. <br />
+        I knew it'd be the last time.
+      </div>
+
+      <p>
+        The <code>&lt;pre&gt;</code> element keeps whitespaces. Usually, HTML
+        only keeps a single whitespace. This can be useful when writing code:
+      </p>
+      <pre>
+        for (let i = 0; i &lt; 10; i++) {
+          console.log("wow");
+        }
+        console.log("for-loop finished")
+      </pre>
+
+      <p>
+        The <code>&lt;hr&gt;</code> element represents a thematic break. For
+        example, a change of scene in a play:
+      </p>
+      <div>
+        <p>
+          John looked out into the Rockies with a burning desire to see the
+          world as it is.
+        </p>
+        <hr />
+        <p>
+          Ten years have past. John, sits in the driver seat, with no hope and
+          desire but a burning cigarette between his fingers.
+        </p>
+      </div>
+
+      <p>
+        The <code>&lt;svg&gt;</code> element can be used for scalable vector
+        graphics. For example, we can use this element to make a GitHub icon.
+      </p>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        x="0px"
+        y="0px"
+        width="104"
+        height="104"
+        viewBox="0 0 26 26"
+      >
+        <path
+          d="M 13 0.1875 C 5.925781 0.1875 0.1875 5.925781 0.1875 13 C 0.1875 20.074219 5.925781 25.8125 13 25.8125 C 20.074219 25.8125 25.8125 20.074219 25.8125 13 C 25.8125 5.925781 20.074219 0.1875 13 0.1875 Z M 13 2.1875 C 18.960938 2.1875 23.8125 7.039063 23.8125 13 C 23.8125 13.46875 23.777344 13.921875 23.71875 14.375 C 23.519531 14.324219 22.894531 14.164063 22.21875 14.15625 C 21.613281 14.148438 20.886719 14.25 20.5 14.3125 C 20.601563 13.898438 20.6875 13.457031 20.6875 13 C 20.6875 11.859375 20.257813 10.75 19.5 9.8125 C 19.78125 8.929688 20.171875 6.921875 19.40625 6.15625 C 17.53125 6.15625 16.476563 7.347656 16.28125 7.59375 C 15.421875 7.28125 14.492188 7.125 13.5 7.125 C 12.53125 7.125 11.59375 7.265625 10.75 7.5625 C 10.488281 7.246094 9.453125 6.15625 7.65625 6.15625 C 6.90625 6.90625 7.28125 8.839844 7.5625 9.75 C 6.769531 10.703125 6.3125 11.832031 6.3125 13 C 6.3125 13.429688 6.347656 13.859375 6.4375 14.25 C 6.109375 14.222656 4.777344 14.125 4.25 14.125 C 3.722656 14.125 2.855469 14.238281 2.28125 14.375 C 2.222656 13.921875 2.1875 13.46875 2.1875 13 C 2.1875 7.039063 7.039063 2.1875 13 2.1875 Z M 4.25 14.375 C 4.769531 14.375 6.371094 14.519531 6.53125 14.53125 C 6.558594 14.625 6.589844 14.71875 6.625 14.8125 C 6.097656 14.769531 4.96875 14.695313 4.25 14.78125 C 3.371094 14.886719 2.722656 15.234375 2.46875 15.375 C 2.414063 15.128906 2.351563 14.875 2.3125 14.625 C 2.863281 14.496094 3.761719 14.375 4.25 14.375 Z M 22.21875 14.40625 C 22.875 14.414063 23.519531 14.554688 23.6875 14.59375 C 23.671875 14.707031 23.644531 14.824219 23.625 14.9375 C 23.539063 14.914063 22.757813 14.675781 21.9375 14.65625 C 21.535156 14.644531 20.898438 14.710938 20.40625 14.75 C 20.429688 14.6875 20.449219 14.625 20.46875 14.5625 C 20.808594 14.515625 21.617188 14.398438 22.21875 14.40625 Z M 21.90625 14.90625 C 22.703125 14.925781 23.546875 15.175781 23.59375 15.1875 C 22.855469 18.777344 20.335938 21.699219 17 23.03125 L 17 21.3125 C 17 20.230469 16.355469 18.824219 15.4375 18.125 C 18.023438 17.753906 19.632813 16.609375 20.3125 15 C 20.777344 14.960938 21.488281 14.894531 21.90625 14.90625 Z M 5.0625 15 C 5.777344 15.003906 6.417969 15.039063 6.71875 15.0625 C 7.414063 16.636719 9.011719 17.757813 11.5625 18.125 C 11.273438 18.347656 11.003906 18.636719 10.78125 18.96875 C 10.773438 18.980469 10.757813 18.988281 10.75 19 C 10.25 19.601563 9.3125 19.5625 8.4375 19.5625 C 7.542969 19.5625 7.007813 18.847656 6.53125 18.21875 C 6.050781 17.59375 5.425781 17.539063 5.09375 17.5 C 4.761719 17.464844 4.671875 17.632813 4.84375 17.75 C 5.816406 18.433594 6.199219 19.269531 6.59375 20 C 6.949219 20.65625 7.679688 21 8.5 21 L 10.03125 21 C 10.019531 21.101563 10 21.214844 10 21.3125 L 10 23.375 C 6.316406 22.3125 3.464844 19.359375 2.53125 15.625 C 2.726563 15.515625 3.414063 15.132813 4.28125 15.03125 C 4.488281 15.007813 4.765625 15 5.0625 15 Z M 13.5 21 C 13.777344 21 14 21.222656 14 21.5 L 14 23.75 C 13.667969 23.78125 13.339844 23.8125 13 23.8125 L 13 21.5 C 13 21.222656 13.222656 21 13.5 21 Z M 11.5 21.59375 C 11.777344 21.59375 12 21.816406 12 22.09375 L 12 23.75 C 11.667969 23.71875 11.324219 23.683594 11 23.625 L 11 22.09375 C 11 21.816406 11.222656 21.59375 11.5 21.59375 Z M 15.5 21.59375 C 15.777344 21.59375 16 21.816406 16 22.09375 L 16 23.375 C 15.671875 23.46875 15.339844 23.5625 15 23.625 L 15 22.09375 C 15 21.816406 15.222656 21.59375 15.5 21.59375 Z"
+        ></path>
+      </svg>
+
+      <p>
+        The <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> elements
+        should be used with care. Both of them do not hold any semantic meaning.
+        Thus, they should be used as a last resort when no
+        semantically-meaningful element can be used. The two elements are often
+        used to group content for styling purposes. I will demonstrate this by
+        styling them using the <code>&lt;style&gt;</code> element inside the
+        <code>&lt;head&gt;</code> of this page.
+      </p>
+
+      <div class="div-span-example">
+        This is a <code>&lt;div&gt;</code> block.
+        <span class="div-span-example"
+          >This is a <code>&lt;span&gt;</code> element.</span
+        >
+      </div>
+
+      <p>
+        We can embed other websites using the
+        <code>&lt;iframe&gt;</code> element.
+      </p>
+      <iframe
+        src="../about-me.html"
+        title="David Jeong's About Me Page"
+      ></iframe>
+
+      <p>We can embed audio using the <code>&lt;audio&gt;</code> element.</p>
+      <audio controls src="../media/audio/summer-party.mp3">
+        <a href="../media/audio/summer-party.mp3">Download audio</a>
+      </audio>
+
+      <p>We can embed videos using the <code>&lt;video&gt;</code> element.</p>
+      <video controls src="../media/video/seagulls-flying.mp4">
+        <a href="../media/video/seagulls-flying.mp4">Download video</a>
+      </video>
+
+      <p>
+        We can use the <code>&lt;canvas&gt;</code> element and JavaScript to
+        draw, for example, a purple circle.
+      </p>
+      <canvas id="test-canvas">A purple circle</canvas>
+
+      <p>
+        We can use the <code>&lt;details&gt;</code> and
+        <code>&lt;summary&gt;</code> elements to create a collapsible widget.
+      </p>
+      <details>
+        <summary>Information about Japan</summary>
+        <p>Population: 125.7 million</p>
+        <p>GDP: 4.941 trillion USD</p>
+      </details>
+
+      <p>
+        We can use the <code>&lt;table&gt;</code> element to create a table.
+      </p>
+      <table>
+        <caption>
+          Names and Birthplace of my Favorite Famous People
+        </caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Birthplace</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Aimyon</td>
+            <td>Nishinomiya, Japan</td>
+          </tr>
+          <tr>
+            <td>Yutaka Ozaki</td>
+            <td>Tokyo, Japan</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        We can use the <code>&lt;template&gt;</code> element to create fragments
+        of code that can be reused using JavaScript. Please view the page source
+        via the browser's dev tools to see this element in use.
+      </p>
+      <template id="favorite-people-table-row">
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+      </template>
+
+      <p>
+        In tables, we can use <code>&lt;colgroup&gt;</code> and
+        <code>&lt;col&gt;</code> to group columns.
+      </p>
+      <table>
+        <caption>
+          A Simple Table for Demonstration of
+          <code>&lt;colgroup&gt;</code>
+          and
+          <code>&lt;col&gt;</code>
+        </caption>
+        <colgroup>
+          <col span="1" />
+          <col span="1" />
+        </colgroup>
+        <tr>
+          <th>Col 1</th>
+          <th>Col 2</th>
+        </tr>
+        <tr>
+          <td>Col 1 Data</td>
+          <td>Col 2 Data</td>
+        </tr>
+      </table>
+
+      <p>
+        We can use the <code>&lt;form&gt;</code> element along with other
+        elements to create a form. Let's create a form to collect basic user
+        information using these elements.
+      </p>
+
+      <form method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="firstName"
+            >First Name: <input type="text" name="firstName" id="firstName"
+          /></label>
+          <label for="lastName"
+            >Last Name: <input type="text" name="lastName" id="lastName"
+          /></label>
+          <label for="aboutUser">
+            Tell me a little about yourself.
+            <textarea name="aboutUser" id="aboutUser"></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="favoriteTransportation">
+            What is your favorite mode of transporation?
+            <select name="favoriteTransportation" id="favoriteTransportation">
+              <optgroup label="Ground">
+                <option value="car">Car</option>
+                <option value="train">Train</option>
+              </optgroup>
+
+              <optgroup label="Air">
+                <option value="airplane">Airplane</option>
+              </optgroup>
+            </select>
+          </label>
+
+          <label for="favoriteColor">
+            What is your favorite color: red, green, or blue?
+            <input type="text" name="favoriteColor" id="favoriteColor" />
+            <datalist for="favoriteColor">
+              <option value="red">Red</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+            </datalist>
+          </label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://github.com/davidjeong0628" target="_blank"
+            ><img alt="GitHub icon"
+          /></a>
+        </li>
+        <li>
+          <a href="mailto:davidjeong0628@gmail.com"><img alt="Email icon" /></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"><img alt="Resume icon" /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/david-j-b85488192/"
+            target="_blank"
+            ><img alt="LinkedIn logo"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+    <script>
+      const canvas = document.getElementById("test-canvas");
+      const ctx = canvas.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+      ctx.fillStyle = "purple";
+      ctx.fill();
+    </script>
+  </body>
+</html>
