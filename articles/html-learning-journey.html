@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Some Cool Elements in HTML</title>
-    <link rel="favicon" href="" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning Journey</title>
     <style>
       .div-span-example {
         border: 1px solid black;
       }
-    </style>
+      </style>
+    <link rel="icon" href="../assets/icons/favicon.ico">
   </head>
   <body>
     <header>
-      <a href="index.html"> ~ </a>
+      <a href="../index.html"> ~ </a>
       <nav>
         <ul>
           <li><a href="../about-me.html">about me</a></li>
@@ -24,11 +24,10 @@
       </nav>
     </header>
     <main>
-      <h1>My <abbr>HTML</abbr> Learning Journey</h1>
+      <h1>HTML Learning Journey</h1>
 
       <p>
-        <abbr>HTML</abbr> (Hyper Text Markup Language) is a
-        <strong>foundational</strong> component of web design. There are many
+        HTML is a <strong>foundational</strong> component of web design. There are many
         technologies that are used to build websites: React, jQuery, Angular,
         Vue, etc. It may be tempting to learn these "hip" technologies first.
         However, it is wise to learn HTML first to truly understand how websites
@@ -44,7 +43,7 @@
 
       <p>
         To view the code for how these elements work, you can use your browser's
-        developer tools to inspect elements or view the page source.
+        developer tools to inspect elements or view the source code of this page.
       </p>
 
       <p>
@@ -55,19 +54,19 @@
       </p>
       <picture>
         <source
-          srcset="../images/picture-demo-large.webp"
+          srcset="../assets/images/picture-demo-large.webp"
           type="image/webp"
           media="(min-width: 3000px)"
-        />
+        >
         <source
-          srcset="../images/picture-demo-large.jpeg"
+          srcset="../assets/images/picture-demo-large.jpeg"
           type="image/webp"
           media="(min-width: 3000px)"
-        />
+        >
         <img
-          src="../images/picture-demo-small.jpeg"
+          src="../assets/images/picture-demo-small.jpeg"
           alt="A view of a city from the waterfront at night"
-        />
+        >
       </picture>
 
       <p>
@@ -81,33 +80,31 @@
 
       <p>
         The <code>&lt;b&gt;</code> element may look like it should be used to
-        bold text. However, doing so is not good practice. Bolding text should
+        bold text. However, doing so is <strong>not</strong> good practice. Bolding text should
         be done through CSS. Rather, the <code>&lt;b&gt;</code> element should
         be used to draw attention to the content without adding any semantic
         importance to it. For example, MDN recommends using the
         <code>&lt;b&gt;</code> element to highlight things like keywords in a
-        summary. For instance, <b>CSS</b> is used for styling purposes.
+        summary. For instance, <b>HTML</b> should be used for semantic purposes.
       </p>
 
       <p>
         The <code>&lt;i&gt;</code> element may look like it should be used to
         italize text. However, as we saw with the
         <code>&lt;b&gt;</code> element, we cannot fall into this trap. Rather,
-        <code>&lt;i&gt;</code> should be used for "represents a range of text
-        that is set off from the normal text for some reason, such as idiomatic
-        text, technical terms, taxonomical designations, among others." For
-        instance, we are <i>Homo sapiens</i>.
+        <code>&lt;i&gt;</code> should be used to represent text that is somehow
+        different different from the text. For instance, we are <i>Homo sapiens</i>.
       </p>
 
       <p>
         The <code>&lt;br&gt;</code> element creates a line-break. This is useful
         when writing poems or addresses. For example, here's a made-up poem:
       </p>
-      <div>
-        You looked me in the eye. <br />
-        Goodbyes as usual. <br />
+      <p>
+        You looked me in the eye. <br>
+        Goodbyes as usual. <br>
         I knew it'd be the last time.
-      </div>
+      </p>
 
       <p>
         The <code>&lt;pre&gt;</code> element keeps whitespaces. Usually, HTML
@@ -124,17 +121,15 @@
         The <code>&lt;hr&gt;</code> element represents a thematic break. For
         example, a change of scene in a play:
       </p>
-      <div>
-        <p>
-          John looked out into the Rockies with a burning desire to see the
-          world as it is.
-        </p>
-        <hr />
-        <p>
-          Ten years have past. John, sits in the driver seat, with no hope and
-          desire but a burning cigarette between his fingers.
-        </p>
-      </div>
+      <p>
+        John looked out into the Rockies with a burning desire to see the
+        world as it is.
+      </p>
+      <hr>
+      <p>
+        Ten years have past. John, sits in the driver seat, with no hope and
+        desire but a burning cigarette between his fingers.
+      </p>
 
       <p>
         The <code>&lt;svg&gt;</code> element can be used for scalable vector
@@ -158,20 +153,19 @@
         should be used with care. Both of them do not hold any semantic meaning.
         Thus, they should be used as a last resort when no
         semantically-meaningful element can be used. The two elements are often
-        used to group content for styling purposes. I will demonstrate this by
-        styling them using the <code>&lt;style&gt;</code> element inside the
+        used to group content for styling purposes. The former is a block container, while the latter is inline.
+        I will demonstrate this by styling them using the <code>&lt;style&gt;</code> element inside the
         <code>&lt;head&gt;</code> of this page.
       </p>
-
       <div class="div-span-example">
         This is a <code>&lt;div&gt;</code> block.
-        <span class="div-span-example"
-          >This is a <code>&lt;span&gt;</code> element.</span
-        >
+        <span class="div-span-example">
+          This is a <code>&lt;span&gt;</code> element.
+        </span>
       </div>
 
       <p>
-        We can embed other websites using the
+        We can embed other pages using the
         <code>&lt;iframe&gt;</code> element.
       </p>
       <iframe
@@ -180,18 +174,19 @@
       ></iframe>
 
       <p>We can embed audio using the <code>&lt;audio&gt;</code> element.</p>
-      <audio controls src="../media/audio/summer-party.mp3">
+      <audio controls src="../assets/media/audio/summer-party.mp3">
         <a href="../media/audio/summer-party.mp3">Download audio</a>
       </audio>
 
       <p>We can embed videos using the <code>&lt;video&gt;</code> element.</p>
       <video controls src="../media/video/seagulls-flying.mp4">
-        <a href="../media/video/seagulls-flying.mp4">Download video</a>
+        <a href="../assets/media/video/seagulls-flying.mp4">Download video</a>
       </video>
 
       <p>
         We can use the <code>&lt;canvas&gt;</code> element and JavaScript to
-        draw, for example, a purple circle.
+        draw, for example, a purple circle. The JavaScript code is at the end
+        of the <code>&lt;body&gt;</code>
       </p>
       <canvas id="test-canvas">A purple circle</canvas>
 
@@ -231,18 +226,6 @@
       </table>
 
       <p>
-        We can use the <code>&lt;template&gt;</code> element to create fragments
-        of code that can be reused using JavaScript. Please view the page source
-        via the browser's dev tools to see this element in use.
-      </p>
-      <template id="favorite-people-table-row">
-        <tr>
-          <td></td>
-          <td></td>
-        </tr>
-      </template>
-
-      <p>
         In tables, we can use <code>&lt;colgroup&gt;</code> and
         <code>&lt;col&gt;</code> to group columns.
       </p>
@@ -254,8 +237,8 @@
           <code>&lt;col&gt;</code>
         </caption>
         <colgroup>
-          <col span="1" />
-          <col span="1" />
+          <col span="1">
+          <col span="1">
         </colgroup>
         <tr>
           <th>Col 1</th>
@@ -268,20 +251,33 @@
       </table>
 
       <p>
-        We can use the <code>&lt;form&gt;</code> element along with other
-        elements to create a form. Let's create a form to collect basic user
-        information using these elements.
+        We can use the <code>&lt;template&gt;</code> element to create fragments
+        of code that can be reused using JavaScript. Please view the page source
+        via the browser's dev tools to see this element in use as this element is hidden by default.
       </p>
+      <template id="favorite-people-table-row">
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+      </template>
 
-      <form method="post">
+      <p>
+        We can use the <code>&lt;form&gt;</code> element along with other related
+        elements to create a form. Let's create a form to collect basic user
+        information using these elements. Note that the below form's <i>action</i> attribute
+        is not set to a meaningful <i>URI</i> as it's for purpose is to simply demonstrate 
+        a HTML form.
+      </p>
+      <form>
         <fieldset>
           <legend>Personal Information</legend>
-          <label for="firstName"
-            >First Name: <input type="text" name="firstName" id="firstName"
-          /></label>
-          <label for="lastName"
-            >Last Name: <input type="text" name="lastName" id="lastName"
-          /></label>
+          <label for="firstName">
+            First Name: <input type="text" name="firstName" id="firstName">
+          </label>
+          <label for="lastName">
+            Last Name: <input type="text" name="lastName" id="lastName">
+          </label>
           <label for="aboutUser">
             Tell me a little about yourself.
             <textarea name="aboutUser" id="aboutUser"></textarea>
@@ -307,13 +303,13 @@
 
           <label for="favoriteColor">
             What is your favorite color: red, green, or blue?
-            <input type="text" name="favoriteColor" id="favoriteColor" />
-            <datalist for="favoriteColor">
-              <option value="red">Red</option>
-              <option value="green">Green</option>
-              <option value="blue">Blue</option>
-            </datalist>
+            <input list="favoriteColorList" name="favoriteColor" id="favoriteColor">
           </label>
+          <datalist id="favoriteColorList">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+          </datalist>
         </fieldset>
 
         <button type="submit">Submit</button>
@@ -322,22 +318,27 @@
     <footer>
       <ul>
         <li>
-          <a href="https://github.com/davidjeong0628" target="_blank"
-            ><img alt="GitHub icon"
-          /></a>
+          <a href="mailto:davidjeong0628@gmail.com">
+            <img src="../assets/icons/email.svg" alt="Email">
+          </a>
         </li>
         <li>
-          <a href="mailto:davidjeong0628@gmail.com"><img alt="Email icon" /></a>
-        </li>
-        <li>
-          <a href="#" target="_blank"><img alt="Resume icon" /></a>
+          <a href="https://github.com/davidjeong0628" target="_blank">
+            <img src="../assets/icons/github.svg" alt="GitHub">
+          </a>
         </li>
         <li>
           <a
             href="https://www.linkedin.com/in/david-j-b85488192/"
             target="_blank"
-            ><img alt="LinkedIn logo"
-          /></a>
+          >
+            <img src="../assets/icons/linkedin.svg" alt="LinkedIn">
+          </a>
+        </li>
+        <li>
+          <a href="../assets/documents/resume.pdf" target="_blank">
+            <img src="../assets/icons/resume.svg" alt="Resume">
+          </a>
         </li>
       </ul>
     </footer>
