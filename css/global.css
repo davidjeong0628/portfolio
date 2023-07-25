@@ -1,0 +1,217 @@
+:root {
+  --body-width-mobile: 95dvw;
+  --body-width-tablet: 60dvw;
+  --body-width-desktop: 45dvw;
+  --header-padding-mobile: 1dvh;
+  --header-padding: 2dvh;
+  --header-nav-li-margin: 3dvw;
+  --logo-size-mobile: 3rem;
+  --logo-size-desktop: 5rem;
+  --header-nav-width: 50%;
+  --main-element-margin-mobile: 2.5dvh;
+  --main-element-margin-desktop: 5dvh;
+  --h1-font-size-mobile: 1.5rem;
+  --h1-font-size-desktop: 3rem;
+  --section-h2-font-size-mobile: 1rem;
+  --section-h2-font-size-desktop: 2rem;
+  --section-p-font-size-mobile: 0.7rem;
+  --footer-img-width-mobile: 35%;
+  --footer-img-width-desktop: 25%;
+  --link-color: hsl(219, 100%, 62%);
+  --link-color-hover: hsl(219, 100%, 30%);
+  --link-color-active: hsl(0, 100%, 63%);
+  --font-size-mobile: 0.8rem;
+  --font-size-desktop: 1rem;
+}
+
+@font-face {
+  font-family: "Varela Round";
+  src: url("../fonts/varela-round/VarelaRound-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("../fonts/cormorant/Cormorant-VariableFont_wght.ttf")
+    format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amiko";
+  src: url("../fonts/amiko/Amiko-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  width: var(--body-width-mobile);
+  display: flex;
+  font-family: "Amiko", sans-serif;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-size: var(--font-size-mobile);
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--link-color-hover);
+}
+
+a:active {
+  color: var(--link-color-active);
+}
+
+ul,
+ol {
+  list-style-position: inside;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-top: var(--header-padding-mobile);
+  padding-bottom: var(--header-padding-mobile);
+  align-items: center;
+}
+
+header > a {
+  font-size: var(--logo-size-mobile);
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+header nav ul li {
+  margin-right: var(--header-nav-li-margin);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Varela Round", sans-serif;
+}
+
+h1 {
+  font-size: var(--h1-font-size-mobile);
+}
+
+main > * {
+  margin-bottom: var(--main-element-margin-mobile);
+}
+
+section h2 {
+  font-size: var(--section-h2-font-size-mobile);
+  margin-bottom: 2dvh;
+}
+
+p {
+  font-size: var(--section-p-font-size-mobile);
+}
+
+#experience > ol {
+  list-style-type: none;
+}
+
+#experience > ol > li {
+  margin-bottom: 1dvh;
+}
+
+#experience ul li {
+  font-size: var(--section-p-font-size-mobile);
+}
+
+#skills > section {
+  margin-bottom: 1dvh;
+}
+
+footer {
+  margin-bottom: 3dvh;
+}
+
+footer > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+footer img {
+  filter: grayscale(100%);
+  width: var(--footer-img-width-mobile);
+  transition: filter 0.5s ease;
+}
+
+footer img:hover {
+  filter: grayscale(0%);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    width: var(--body-width-tablet);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    width: var(--body-width-desktop);
+    font-size: var(--font-size-desktop);
+  }
+
+  header {
+    padding-top: var(--header-padding);
+    padding-bottom: var(--header-padding);
+  }
+
+  header > a {
+    font-size: var(--logo-size-desktop);
+  }
+
+  h1 {
+    font-size: var(--h1-font-size-desktop);
+  }
+
+  main > * {
+    margin-bottom: var(--main-element-margin-desktop);
+  }
+
+  section h2 {
+    font-size: var(--section-h2-font-size-desktop);
+  }
+
+  p {
+    font-size: var(--font-size-desktop);
+  }
+
+  #experience ul li {
+    font-size: var(--font-size-desktop);
+  }
+
+  footer img {
+    width: var(--footer-img-width-desktop);
+  }
+}

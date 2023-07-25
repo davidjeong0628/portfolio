@@ -1,0 +1,35 @@
+:root {
+  --h1-font-size-mobile: 3rem;
+  --h1-font-size-desktop: 7rem;
+}
+
+body {
+  height: 100dvh;
+  justify-content: center;
+}
+
+h1 {
+  align-self: center;
+  font-size: var(--h1-font-size-mobile);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+nav {
+  margin-top: 1.5dvh;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: var(--h1-font-size-desktop);
+  }
+}

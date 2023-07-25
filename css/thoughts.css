@@ -1,0 +1,26 @@
+ul {
+  list-style-type: none;
+}
+
+.quotes-list > li {
+  margin-bottom: 3dvh;
+}
+
+figure {
+  margin-top: 1dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+figure > blockquote {
+  padding-top: 2dvh;
+  padding-bottom: 2dvh;
+  padding-left: 0.5dvw;
+  align-self: center;
+  border-left: 0.5dvw solid hsl(0, 0%, 73%);
+  width: 75%;
+}
+
+figure > figcaption {
+  align-self: flex-end;
+}

@@ -1,0 +1,7 @@
+main > ul {
+    list-style-type: none;
+}
+
+.project-listing > ul {
+    margin-bottom: 1dvh;
+}
