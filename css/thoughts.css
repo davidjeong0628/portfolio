@@ -1,9 +1,17 @@
+:root {
+  --quotes-list-item-margin-bottom: 3dvh;
+  --blockquote-padding-top-bottom: 2dvh;
+  --blockquote-padding-left: 0.5dvw;
+  --blockquote-border-left: 0.5dvw solid hsl(0, 0%, 73%);
+  --blockquote-width: 75%;
+}
+
 ul {
   list-style-type: none;
 }
 
 .quotes-list > li {
-  margin-bottom: 3dvh;
+  margin-bottom: var(--quotes-list-item-margin-bottom);
 }
 
 figure {
@@ -13,12 +21,12 @@ figure {
 }
 
 figure > blockquote {
-  padding-top: 2dvh;
-  padding-bottom: 2dvh;
-  padding-left: 0.5dvw;
+  padding-top: var(--blockquote-padding-top-bottom);
+  padding-bottom: var(--blockquote-padding-top-bottom);
+  padding-left: var(--blockquote-padding-left);
   align-self: center;
-  border-left: 0.5dvw solid hsl(0, 0%, 73%);
-  width: 75%;
+  border-left: var(--blockquote-border-left);
+  width: var(--blockquote-width);
 }
 
 figure > figcaption {

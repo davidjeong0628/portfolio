@@ -2,10 +2,12 @@
   --welcome-h1-font-size-mobile: 3rem;
   --welcome-h1-font-size-tablet: 5rem;
   --welcome-h1-font-size-desktop: 7rem;
+  --body-height: 100dvh;
+  --index-nav-margin-top: 1.5dvh;
 }
 
 body {
-  height: 100dvh;
+  height: var(--body-height);
   justify-content: center;
 }
 
@@ -23,7 +25,7 @@ ul {
 }
 
 nav {
-  margin-top: 1.5dvh;
+  margin-top: var(--index-nav-margin-top);
 }
 
 @media screen and (min-width: 768px) {
