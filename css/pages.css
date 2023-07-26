@@ -1,11 +1,13 @@
 :root {
   --footer-img-width-mobile: 40%;
-  --footer-img-width-desktop: 25%;
+  --footer-img-width-laptop: 30%;
   --header-nav-li-margin: 3dvw;
   --header-nav-li-font-size-mobile: 0.8rem;
+  --header-nav-li-font-size-tablet: 1rem;
   --header-padding-mobile: 1dvh;
   --header-padding: 2dvh;
   --logo-size-mobile: 3rem;
+  --logo-size-tablet: 4rem;
   --main-element-margin-mobile: 2.5dvh;
   --main-element-margin-desktop: 5dvh;
   --h2-font-size-mobile: 1.5rem;
@@ -66,4 +68,24 @@ footer img {
 
 footer img:hover {
   filter: grayscale(0%);
+}
+
+@media screen and (min-width: 768px) {
+  header > a {
+    font-size: var(--logo-size-tablet);
+  }
+
+  header > nav > ul > li {
+    font-size: var(--header-nav-li-font-size-tablet);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer img {
+    width: var(--footer-img-width-laptop);
+  }
+
+  h2 {
+    font-size: var(--h2-font-size-desktop);
+  }
 }

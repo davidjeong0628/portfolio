@@ -1,6 +1,7 @@
 :root {
   --body-width-mobile: 95dvw;
   --body-width-tablet: 60dvw;
+  --body-width-laptop: 50dvw;
   --body-width-desktop: 45dvw;
   --logo-size-desktop: 5rem;
   --header-nav-width: 50%;
@@ -95,18 +96,18 @@ p {
   }
 }
 
-/* @media screen and (min-width: 1024px) {
-  
-} */
+@media screen and (min-width: 1024px) {
+  body {
+    width: var(--body-width-laptop);
+  }
+
+  h1 {
+    font-size: var(--h1-font-size-desktop);
+  }
+}
 
 @media screen and (min-width: 1440px) {
   body {
     width: var(--body-width-desktop);
-    /* font-size: var(--font-size-desktop); */
-  }
-
-  header {
-    padding-top: var(--header-padding);
-    padding-bottom: var(--header-padding);
   }
 }
