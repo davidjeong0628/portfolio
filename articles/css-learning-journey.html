@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Learning Journey</title>
+    <link rel="icon" href="../assets/icons/favicon.ico" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/pages.css" />
+    <link rel="stylesheet" href="../css/article-template.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../index.html"> ~ </a>
+      <nav>
+        <ul>
+          <li><a href="../about-me.html">about me</a></li>
+          <li><a href="../projects.html">projects</a></li>
+          <li><a href="../thoughts.html">thoughts</a></li>
+          <li><a href="../contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>CSS Learning Journey</h1>
+
+      <p>
+        To view the code for the examples below, you can use your browser dev
+        tool to view the code for this HTML file and its associated stylesheets.
+      </p>
+
+      <p>With CSS, we can make animations.</p>
+      <div class="spinner"></div>
+
+      <p>
+        With CSS, we can create transformations. Please
+        <strong>hover</strong> over the email image below to see it transform.
+        It will rotate 180 degrees.
+      </p>
+      <img src="../assets/icons/email.svg" alt="Email" class="rotate" />
+
+      <p>
+        When sending images, especially large photographs, it is important that
+        one sends them with appropriate formats and sizes. For example, one
+        should not send a 1920x1080 image to a phone with a small screen size.
+        The developer should scale down the image and compress it. We can send
+        photos in right sizes and supported formats by using the
+        <code>&lt;picture&gt;</code> element.
+      </p>
+      <picture>
+        <source
+          srcset="../assets/images/koala-1440.webp"
+          media="(min-width: 1440px)"
+          type="image/webp"
+        />
+        <source
+          srcset="../assets/images/koala-1440.jpeg"
+          media="(min-width: 1440px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="../assets/images/koala-1024.webp"
+          media="(min-width: 1024px)"
+          type="image/webp"
+        />
+        <source
+          srcset="../assets/images/koala-1024.jpeg"
+          media="(min-width: 1024px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="../assets/images/koala-768.webp"
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="../assets/images/koala-768.jpeg"
+          media="(min-width: 768px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="../assets/images/koala-320.webp"
+          media="(min-width: 320px)"
+          type="image/webp"
+        />
+        <img
+          src="../assets/images/koala-320.jpeg"
+          alt="Koala sleeping while hanging on a tree"
+        />
+      </picture>
+
+      <footer>
+        <ul>
+          <li>
+            <a href="mailto:davidjeong0628@gmail.com">
+              <img src="../assets/icons/email.svg" alt="Email" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/davidjeong0628" target="_blank">
+              <img src="../assets/icons/github.svg" alt="GitHub" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/david-j-b85488192/"
+              target="_blank"
+            >
+              <img src="../assets/icons/linkedin.svg" alt="LinkedIn" />
+            </a>
+          </li>
+          <li>
+            <a href="../assets/documents/resume.pdf" target="_blank">
+              <img src="../assets/icons/resume.svg" alt="Resume" />
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>

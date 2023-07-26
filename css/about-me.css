@@ -1,0 +1,15 @@
+#experience > ol {
+  list-style-type: none;
+}
+
+#experience > ol > li {
+  margin-bottom: 1dvh;
+}
+
+#experience ul li {
+  font-size: var(--p-font-size-mobile);
+}
+
+#skills > section {
+  margin-bottom: 1dvh;
+}

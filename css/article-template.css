@@ -1,0 +1,29 @@
+.spinner {
+  width: 5dvw;
+  height: 5dvw;
+  border-radius: 50%;
+  border: 0.6dvw solid transparent;
+  border-top-color: #3498db;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  width: 15%;
+}
+
+.rotate:hover {
+  transform: rotate(0.5turn);
+}
+
+picture img {
+  width: 30%;
+}
