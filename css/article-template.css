@@ -1,6 +1,16 @@
+:root {
+  --spinner-width-mobile: 10dvw;
+  --spinner-height-mobile: 10dvw;
+  --spinner-width-laptop: 7dvw;
+  --spinner-height-laptop: 7dvw;
+  --picture-width-mobile: 50%;
+  --picture-width-laptop: 35%;
+  --footer-margin-top: 1.5dvh;
+}
+
 .spinner {
-  width: 5dvw;
-  height: 5dvw;
+  width: var(--spinner-width-mobile);
+  height: var(--spinner-height-mobile);
   border-radius: 50%;
   border: 0.6dvw solid transparent;
   border-top-color: #3498db;
@@ -25,5 +35,20 @@
 }
 
 picture img {
-  width: 30%;
+  width: var(--picture-width-mobile);
+}
+
+footer {
+  margin-top: var(--footer-margin-top);
+}
+
+@media screen and (min-width: 1024px) {
+  .spinner {
+    width: var(--spinner-width-laptop);
+    height: var(--spinner-height-laptop);
+  }
+
+  picture img {
+    width: var(--picture-width-laptop);
+  }
 }

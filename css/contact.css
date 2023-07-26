@@ -17,13 +17,23 @@ h2 {
 }
 
 img {
-  filter: grayscale(100%);
   width: var(--logo-img-width-mobile);
-  transition: filter 0.5s ease;
 }
 
-img:hover {
-  filter: grayscale(0%);
+@media screen and (min-width: 1024px) {
+  img {
+    filter: grayscale(100%);
+    width: var(--footer-img-width-laptop);
+    transition: filter 0.5s ease;
+  }
+
+  img:hover {
+    filter: grayscale(0%);
+  }
+
+  h2 {
+    font-size: var(--h2-font-size-desktop);
+  }
 }
 
 @media screen and (min-width: 1440px) {
